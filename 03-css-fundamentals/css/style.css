@@ -99,6 +99,34 @@ li:nth-child(2){/*I CAN USE ODD OR EVEN*/
   /* color: red; */
 }
 
-article P:last-child {/*so i use pseudo classes when all the child elements are the same EXEMPLE? li*/
+/*Misconceptio: this won1t work*/
+article P:first-child {/*so i use pseudo classes when all the child elements are the same EXEMPLE? li*/
   color: red;
 }
+
+/*Style links*/
+a {
+  color: red;
+}
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  /* color: #777; */
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+/*LVHA*/
