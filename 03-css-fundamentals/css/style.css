@@ -9,6 +9,7 @@ body {
   color: #444;
 
   border-top: 10px solid #1098ad;
+  position: relative;
 }
 
 .container {
@@ -16,6 +17,7 @@ body {
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
+  /* position: relative; */
 }
 
 /* h1,
@@ -37,6 +39,7 @@ li {
   padding: 20px 40px;
   margin-bottom: 60px;
   /* height: 80px; */
+  
 }
 
 nav {
@@ -44,6 +47,7 @@ nav {
 }
 .post-header {
   margin-bottom: 40px;
+  /* position: relative; */
 }
 
 article {
@@ -225,4 +229,17 @@ nav a:link {
 
 nav a:link:last-child {
   margin-right: 0;
+}
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+
+  position: absolute;
+  /* top: 50px;
+  left: 50px; */
+  
+  bottom: 50px;
+  right: 50px;
 }
