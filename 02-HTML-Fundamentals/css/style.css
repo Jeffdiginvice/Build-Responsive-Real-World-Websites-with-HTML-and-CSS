@@ -13,6 +13,7 @@
 body {
   font-family: sans-serif;
   line-height: 1.4;
+  position: relative;
 }
 
 /* .container {
@@ -27,14 +28,26 @@ article.product {
   margin: 30px auto;
 }
 
+article h2::after {
+  content: "SALE";
+  background-color: rgb(250, 6, 6);
+  font-size: 16px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  left: 180px;
+  top: -20px;
+}
+
 h2.product-title {
   text-align: center;
   font-size: 22px;
   text-transform: uppercase;
   background-color: #f7f7f7;
   padding: 10px;
-  margin: 30px auto;
-
+  margin: 0px auto;
 }
 
 p {
@@ -56,13 +69,65 @@ p {
   margin-bottom: 20px;
 }
 
-.link-more-information:link, .link-more-information:visited {
+.link-more-information:link,
+.link-more-information:visited {
   color: #000;
-
 }
 
-.link-more-information:hover, .link-more-information:active{
+.link-more-information:hover,
+.link-more-information:active {
   text-decoration: none;
+}
+
+.div-box {
+ margin: 20px 0 ;
+}
+
+.black-box {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.blue-box {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(13, 13, 198);
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.red-box {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(242, 9, 9);
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.yellow-box {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(237, 237, 6);
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.green-box {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(3, 135, 3);
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.brown-box {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(168, 38, 38);
+  display: inline-block;
 }
 
 /*PRODUCT DETAILS*/
@@ -83,7 +148,7 @@ p {
   margin: 0 0 10px 20px;
 }
 
-.details-list li { 
+.details-list li {
   /* line-height: 1.8; */
   margin-bottom: 10px;
 }
