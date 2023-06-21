@@ -2,6 +2,7 @@
   /* border-top: 10px solid #1098ad; */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 /*PAGE SECTIONS*/
 body {
@@ -58,8 +59,9 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  padding: 50px 0;
-  width: 500px;
+  padding: 50px 40px;
+  /* width: 500px; */
+  box-sizing: border-box;
 }
 
 /*SNALLER ELEMENTS*/
@@ -89,6 +91,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 p {
@@ -102,10 +105,14 @@ p {
 ol,
 ul,
 li {
-  font-size: 20px;
   margin-bottom: 10px;
   margin-left: 25px;
   /* display: inline; */
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 li:last-child {
   margin-bottom: 0;
@@ -138,6 +145,7 @@ li:last-child {
 
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
 /* .first-line {
@@ -284,7 +292,6 @@ h3 + p::first-line {
   float: left;
   margin-top: 10px;
   margin-left: 20px;
-  
 }
 
 h1 {
