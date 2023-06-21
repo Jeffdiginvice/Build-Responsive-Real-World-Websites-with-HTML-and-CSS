@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -36,7 +36,7 @@ li {
 
 .main-header {
   background-color: #f7f7f7;
-  background-color: red;
+  /* background-color: red; */
   padding: 20px 40px;
   margin-bottom: 60px;
   /* height: 80px; */
@@ -99,10 +99,12 @@ p {
   text-align: justify;
 }
 
+ol,
 ul,
 li {
   font-size: 20px;
   margin-bottom: 10px;
+  margin-left: 25px;
   /* display: inline; */
 }
 li:last-child {
@@ -301,4 +303,21 @@ nav {
   content: "";
   clear: both;
   display: block;
+}
+
+article {
+  /* background-color: green; */
+  width: 825px;
+  float: left;
+}
+
+aside {
+  /* background-color: red; */
+  width: 300px;
+  float: right;
+}
+
+footer {
+  background-color: yellow;
+  clear: both;
 }
