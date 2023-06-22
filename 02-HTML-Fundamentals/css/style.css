@@ -4,6 +4,7 @@
   /* border-top: 10px solid #1098ad; */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* * {
@@ -13,7 +14,22 @@
 body {
   font-family: sans-serif;
   line-height: 1.4;
-  position: relative;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container {
+  /* background-color: red; */
+}
+
+.product-img {
+  float: left;
+  margin-right: 40px;
+  margin-top: 30px;
 }
 
 /* .container {
@@ -26,6 +42,7 @@ article.product {
   border: 3px solid #000;
   width: 825px;
   margin: 30px auto;
+  position: relative;
 }
 
 article h2::after {
@@ -37,7 +54,7 @@ article h2::after {
   font-weight: bold;
   color: #fff;
   position: absolute;
-  left: 180px;
+  left: -35px;
   top: -20px;
 }
 
@@ -57,8 +74,17 @@ p {
 }
 
 /*PRODUCT INFORMATION*/
+
+.product-info {
+  width: 243px;
+  float: left;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+
 .price {
   font-size: 24px;
+  float: left;
 }
 
 .free-shipping {
@@ -67,6 +93,13 @@ p {
   color: #777;
   font-weight: bold;
   margin-bottom: 20px;
+  float: right;
+  margin-top: 8px;
+}
+
+.product-description {
+  clear: both;
+  margin-bottom: 10px;
 }
 
 .link-more-information:link,
@@ -80,57 +113,63 @@ p {
 }
 
 .div-box {
- margin: 20px 0 ;
+  margin: 20px 0;
 }
 
 .black-box {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   background-color: #000;
   display: inline-block;
   margin-right: 10px;
 }
 
 .blue-box {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   background-color: rgb(13, 13, 198);
   display: inline-block;
   margin-right: 10px;
 }
 
 .red-box {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   background-color: rgb(242, 9, 9);
   display: inline-block;
   margin-right: 10px;
 }
 
 .yellow-box {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   background-color: rgb(237, 237, 6);
   display: inline-block;
   margin-right: 10px;
 }
 
 .green-box {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   background-color: rgb(3, 135, 3);
   display: inline-block;
   margin-right: 10px;
 }
 
 .brown-box {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   background-color: rgb(168, 38, 38);
   display: inline-block;
 }
 
 /*PRODUCT DETAILS*/
+
+.product-details {
+  width: 243px;
+  float: left;
+  margin-top: 10px;
+}
 
 .details-title {
   text-transform: uppercase;
@@ -160,7 +199,7 @@ p {
   text-transform: uppercase;
   cursor: pointer;
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   border-top: 4px solid #000;
 }
 
