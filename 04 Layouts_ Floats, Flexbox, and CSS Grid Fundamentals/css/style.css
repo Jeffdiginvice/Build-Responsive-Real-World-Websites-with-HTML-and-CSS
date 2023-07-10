@@ -98,8 +98,8 @@ p {
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 15px;
-  text-indent: 15px;
-  text-align: justify;
+  /* text-indent: 15px; */
+  /* text-align: justify; */
 }
 
 ol,
@@ -344,6 +344,7 @@ footer {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+  gap: 15px;
 }
 
 .related-post {
@@ -356,7 +357,7 @@ footer {
 .related-author {
   margin-bottom: 0;
   font-size: 14px;
-  text-indent: 0;
+  /* text-indent: 0; */
   font-weight: normal;
   font-style: italic;
   /* margin-top: 5px; */
@@ -366,7 +367,7 @@ footer {
   font-size: 17px;
   font-weight: bold;
   font-style: normal;
-  display: block;
+  display: block;  
 }
 /*  FLEXBOX LAYOUT*/
 /* .row {
